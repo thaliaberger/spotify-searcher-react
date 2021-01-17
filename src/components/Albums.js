@@ -15,7 +15,7 @@ function Albums(props) {
     const fetchData = async () => {
       try {
         const requestToken = btoa(
-          `${process.env.REACT_APP_CLIENT_ID}:${process.env.REACT_APP_CLIENT_SECRET}`
+          "9582ce1bdce64a6388d648f3ae57ab64:c51adca4ac7d454592fec31b707db6f1"
         );
 
         const response = await axios.post(
@@ -57,7 +57,11 @@ function Albums(props) {
             <Link className="link" key={artist.id} to={`/tracks/${artist.id}`}>
               <div className="info">
                 <p>{artist.name}</p>
-                <img src={artist.images[0].url} />
+                <img
+                  className="img"
+                  src={artist.images[0].url}
+                  alt="album cover"
+                />
               </div>
             </Link>
           ))

@@ -9,13 +9,21 @@ function Footer() {
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous"
       />
-      <footer class="footer">
+      <footer className="footer">
         <p>Developed by Thalía Berger</p>
-        <a href="https://www.linkedin.com/in/thaliaberger/" target="_blank">
-          <i class="fa fa-linkedin fa-2x"></i>
+        <a
+          href="https://www.linkedin.com/in/thaliaberger/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://github.com/thaliaberger" target="_blank">
-          <i class="fa fa-github fa-2x"></i>
+        <a
+          href="https://github.com/thaliaberger"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-github fa-2x"></i>
         </a>
       </footer>
     </div>

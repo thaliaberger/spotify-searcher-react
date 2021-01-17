@@ -33,7 +33,7 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Lobster", cursive;
   padding-top: 6px;
 }
@@ -53,9 +53,24 @@ body a {
 
 /* HOMEPAGE */
 
-.home {
-  height: 300px;
-  margin-top: 170px;
+h1 {
+  background: -webkit-linear-gradient(#fd7777, #fcb99f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+  font-weight: lighter;
+  font-family: "Lobster", cursive;
+  margin: 10px 0;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boy {
+  width: 350px;
+  margin-top: 20px;
 }
 
 input:focus,
@@ -67,7 +82,7 @@ audio:focus {
 .input {
   display: flex;
   justify-content: center;
-  margin-top: 3.3px;
+  margin-top: 3.55px;
 }
 
 .input-background {
@@ -75,15 +90,15 @@ audio:focus {
   justify-content: center;
   align-items: baseline;
   background-color: white;
-  width: 580px;
+  width: 400px;
   border-radius: 15px;
   height: 40px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 input {
   background: none;
-  width: 498px;
+  width: 320px;
   padding: 10px;
   border: 0;
   border-radius: 15px;
@@ -101,7 +116,7 @@ input::placeholder {
 
 .search {
   border-radius: 15px;
-  padding: 10.5px;
+  padding: 10.1px;
   border: 0;
   color: white;
   background: linear-gradient(#ff8585, #ffb396);
@@ -113,7 +128,7 @@ input::placeholder {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .info {
@@ -131,7 +146,7 @@ input::placeholder {
   color: #fff5c0;
 }
 
-img {
+.img {
   width: 130px;
   height: 130px;
   margin: 5px 0;

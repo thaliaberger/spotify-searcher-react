@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Nav from "./Nav";
 import Footer from "./Footer";
+
+import boy from "./images/boy.png";
 
 function Homepage() {
   const [state, setState] = useState({ artist: "" });
@@ -12,8 +13,9 @@ function Homepage() {
     console.log(state.artist);
   }
   return (
-    <div>
-      <Nav />
+    <div className="center">
+      <h1>Spotify Searcher</h1>
+      <img className="boy" src={boy} alt="boy seated and listenin to music" />
       <div className="input">
         <div className="input-background">
           <div>
