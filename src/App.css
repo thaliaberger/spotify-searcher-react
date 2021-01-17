@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+
+* {
+  margin: 0 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0 0;
+  background-color: #dbdbdb;
+  font-family: "Fraunces", serif;
+  margin-bottom: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(#ff8585, #ffb396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Lobster", cursive;
+  padding-top: 6px;
+}
+
+.goback {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background: -webkit-linear-gradient(#ff8585, #ffb396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "Lobster", cursive;
+  padding-top: 6px;
+}
+
+/* HOMEPAGE */
+
+.home {
+  height: 300px;
+  margin-top: 170px;
+}
+
+input:focus,
+button:focus,
+audio:focus {
+  outline: none;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.3px;
+}
+
+.input-background {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: white;
+  width: 580px;
+  border-radius: 15px;
+  height: 40px;
+  margin-top: 100px;
+}
+
+input {
+  background: none;
+  width: 498px;
+  padding: 10px;
+  border: 0;
+  border-radius: 15px;
+}
+
+input::placeholder {
+  padding-left: 8px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.3s 0.3s ease;
+  text-indent: -100%;
+  opacity: 1;
+}
+
+.search {
+  border-radius: 15px;
+  padding: 10.5px;
+  border: 0;
+  color: white;
+  background: linear-gradient(#ff8585, #ffb396);
+}
+
+/* ARTISTS AND ALBUMS PAGE */
+
+.artists {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 140px;
+  height: 200px;
+  margin: 20px 40px;
+}
+
+.info:hover {
+  background-color: hsl(0, 100%, 64%);
+  color: #fff5c0;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+  margin: 5px 0;
+}
+
+.info p {
+  color: #ff8585;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.albums {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(192, 192, 192);
+  border-radius: 15px;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* TRACKS */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tracks {
+  margin: 20px 0 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0;
+}
+
+.tracks p {
+  color: #ff8585;
+  font-weight: bold;
+  margin: 0 100px 0 0;
+  font-size: 1.2em;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #fff5c0;
+}
+
+.tracks audio,
+p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #cccccc;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer p {
+  color: #fff5c0;
+}
+
+.footer i {
+  color: #fff5c0;
+  margin: 8px 0 0 30px;
+}
+
+.footer i:hover {
+  color: #ffb396;
 }

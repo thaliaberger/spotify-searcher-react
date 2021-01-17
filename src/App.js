@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import "./App.css";
+
+// import SpotifyWebApi from "spotify-web-api-node";
+
+import Homepage from "./components/Homepage";
+import Artists from "./components/Artists";
+import Albums from "./components/Albums";
+import Tracks from "./components/Tracks";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/:search" component={Artists} />
+          <Route exact path="/albums/:id" component={Albums} />
+          <Route exact path="/tracks/:id" component={Tracks} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
