@@ -20,7 +20,7 @@ function Artists(props) {
           qs.stringify({ grant_type: "client_credentials" }),
           {
             headers: {
-              Authorization: "Basic " + (OTU4MmNlMWJkY2U2NGE2Mzg4ZDY0OGYzYWU1N2FiNjQ6YzUxYWRjYTRhYzdkNDU0NTkyZmVjMzFiNzA3ZGI2ZjE=),
+              Authorization: "Basic " + OTU4MmNlMWJkY2U2NGE2Mzg4ZDY0OGYzYWU1N2FiNjQ6YzUxYWRjYTRhYzdkNDU0NTkyZmVjMzFiNzA3ZGI2ZjE=,
               "Content-Type": "application/x-www-form-urlencoded",
             },
           }
