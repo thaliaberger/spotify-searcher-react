@@ -14,16 +14,13 @@ function Artists(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const requestToken = btoa(
-          `${process.env.REACT_APP_CLIENT_ID}:${process.env.REACT_APP_CLIENT_SECRET}`
-        );
 
         const response = await axios.post(
           "https://accounts.spotify.com/api/token",
           qs.stringify({ grant_type: "client_credentials" }),
           {
             headers: {
-              Authorization: "Basic " + requestToken,
+              Authorization: "Basic " + "OTU4MmNlMWJkY2U2NGE2Mzg4ZDY0OGYzYWU1N2FiNjQ6YzUxYWRjYTRhYzdkNDU0NTkyZmVjMzFiNzA3ZGI2ZjE=",
               "Content-Type": "application/x-www-form-urlencoded",
             },
           }
