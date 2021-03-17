@@ -15,7 +15,7 @@ function Artists(props) {
     const fetchData = async () => {
       try {
         const requestToken = btoa(
-          `${process.env.REACT_APP_CLIENT_ID}:${process.env.REACT_APP_CLIENT_SECRET}`
+          "9582ce1bdce64a6388d648f3ae57ab64:c51adca4ac7d454592fec31b707db6f1"
         );
 
         const response = await axios.post(
